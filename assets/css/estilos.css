@@ -1,0 +1,588 @@
+:root {
+    --color-marca: #2C114F;
+    --color-seccion--oscuro: #0B0D17;
+    --color-fuente-oscuro: #18191F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    top: sticky;
+    font-weight: 500;
+    z-index: 99;
+}
+
+.header__container,
+.main__section--welcome__container,
+.main__section--features__container,
+.main__section--how-works__container,
+.main__section--testimonials__container,
+.main__section--team__container,
+.main__section--pricing__container,
+.main__section--faq__container,
+.main__section--contact__container,
+.footer__container{
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main__section--welcome__container,
+.main__section--team__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    min-height: calc(100vh - 72px);
+}
+
+.main__section--pricing__container,
+.main__section--faq__container,
+.main__section--contact__container{
+    min-height: calc(100vh - 72px);
+}
+
+.main__section--contact__container{
+    display: flex;
+    justify-content: center;
+}
+
+.main__section--team__container{
+    margin-top: 11rem;
+    align-items: inherit;
+}
+
+.header__container,
+.header__container__menu{
+    display: flex;
+    align-items: center;
+}
+
+.header__container{
+    justify-content: space-between;
+}
+
+.header__container__menu__logo{
+    margin-right: 1rem;
+}
+
+.header__container__menu__logo > a > img{
+    width: auto;
+    height: 35px;
+}
+
+.header__container__menu__navbar__ul{
+    list-style: none;
+}
+
+.header__container__menu__navbar__ul__li{
+    display: inline;
+    margin: 0 0.3rem;
+    font-size: 1rem;
+}
+
+.header__container__menu__navbar__ul__li__link{
+    text-decoration: none;
+}
+
+.header__container__buttons > button{
+    width: 130px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.header__container__buttons__login{
+    background-color: #f1e4ff;
+    border: 1px solid #f1e4ff;
+    color: #8C30F5;
+}
+
+.header__container__buttons__signin{
+    background-color: #8C30F5;
+    border: 1px solid #8C30F5;
+    color: #fff;
+}
+
+.main__section--welcome__container__text__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 6.125rem;
+    color: var(--color-fuente-oscuro);
+}
+
+.main__section--welcome__container__text__subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2.8125rem;
+}
+
+.header__container__button__start{
+    width: 144px;
+    height: 48px;
+    background-color: #8C30F5;
+    border: 1px solid #8C30F5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.main__section--welcome__container__image__container__img--background{
+    position: absolute;
+}
+
+.main__section--welcome__container__image__container__img--demo{
+    position: relative;
+    top: 100px;
+    left: 70px;
+}
+
+.main__section--features{
+    background-color: var(--color-seccion--oscuro);
+    padding: 5rem;
+}
+
+.main__section--features__container__title{
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.main__section--features__container__link__container{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.main__section--features__container__link__container_a{
+    padding: 12px 20px;
+    width: 155px;
+    height: 48px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main__section--features__container__grid{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2.5rem;
+}
+
+.main__section--features__container__grid__card{
+    width: 100%;
+    height: auto;
+    padding: 40px 32px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--color-fuente-oscuro);
+}
+
+.main__section--features__container__grid__card__img{
+    margin-bottom: 4rem;
+}
+
+.main__section--features__container__grid__card__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.main__section--features__container__grid__card__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 2.5rem;
+}
+
+.main__section--features__container__grid__card__link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #8C30F5;
+    text-decoration: none;
+}
+
+.main__section--how-works__container{
+    padding: 5rem 0;
+}
+
+.main__section--how-works__container__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.main__section--how-works__container__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.main__section--how-works__container__grid__steps__image{
+    margin-bottom: 1rem;
+}
+
+.main__section--how-works__container__grid__steps__subtitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);
+}
+
+.main__section--how-works__container__grid__steps__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);
+}
+
+.main__section--testimonials{
+    background-color: #F4F5F7;
+    padding: 5rem 0;
+}
+
+.main__section--testimonials__container__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);    
+    margin-bottom: 0.5rem;
+}
+
+.main__section--testimonials__container__subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);   
+    margin-bottom: 2.5rem;
+}
+
+.main__section--testimonials__container__grid{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main__section--testimonials__container__grid__card{
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2.5rem;
+}
+
+.main__section--testimonials__container__grid__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);  
+    margin-bottom: 0.5rem;
+}
+
+.main__section--testimonials__container__grid__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);  
+}
+
+.footer{
+    background-color: var(--color-seccion--oscuro);
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__container__marca__p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+.footer__container__marca__copyright{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #D9DBE1;
+}
+
+.footer__container__menu{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__container__menu__column__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+.footer__container__menu__column__title__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #D9DBE1;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.footer__container__menu__column__title__input{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: var(--color-fuente-oscuro);
+    border-radius: 8px;
+    padding: 0.5625rem 0.75rem;
+}
+
+.main__section--team__container__text__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3.375rem;
+    color: var(--color-fuente-oscuro);   
+    margin-bottom: 2rem;
+}
+
+.main__section--team__container__text__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: var(--color-fuente-oscuro);   
+}
+
+.main__section--pricing__container{
+    padding: 4rem 0;
+}
+
+.main__section--pricing__container__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);   
+    margin-bottom: 0.5rem;
+}
+
+.main__section--pricing__container__pricing{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);   
+    margin-bottom: 3rem;
+}
+
+.main__section--pricing__container__grid{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.main__section--pricing__container__grid__column__icon{
+    margin-bottom: 1.5rem;
+}
+
+.main__section--pricing__container__grid__column__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);  
+    margin-bottom: 0.5rem;
+}
+
+.main__section--pricing__container__grid__column__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);  
+}
+
+.main__section--faq__container,
+.main__section--contact__container{
+    padding: 4rem 0.75rem;
+}
+
+.main__section--faq__container__text__title,
+.main__section--contact__container__text__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 3rem;
+}
+
+.main__section--faq__container__text__grid{
+    display: grid;
+    gap: 4.875rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main__section--faq__container__text__column__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 0.5rem;
+}
+
+.main__section--faq__container__text__column__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 2.5rem;
+}
+
+.main__section--contact__container__text__input,
+.main__section--contact__container__text__button{
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.main__section--contact__container__text__button{
+    background-color: #8C30F5;
+    border: 1px solid #8C30F5;
+    color: #fff;
+}
+
+.header__container__buttons__menu-burger{
+    width: 50px !important;
+    padding: 1px 6px !important;
+    font-size:2rem;
+    background-color: #f1e4ff;
+    border: 1px solid #f1e4ff;
+    color: #8C30F5;
+    display: none;
+}
+
+.main__section--team__container__image > img,
+.main__section--faq__container__text__column > img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 992px){
+    .main__section--welcome__container,
+    .main__section--features__container__grid,
+    .main__section--how-works__container__grid,
+    .main__section--testimonials__container__grid,
+    .footer__container__menu,
+    .main__section--team__container,
+    .main__section--pricing__container__grid,
+    .main__section--faq__container__text__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .main__section--welcome__container{
+        text-align: center;
+    }
+
+    .main__section--welcome__container__image__container,
+    .footer__container__menu,
+    .header__container__menu__navbar,
+    .header__container__buttons__login,
+    .header__container__buttons__signin{
+        display: none;
+    }
+
+    .header__container__buttons__menu-burger{
+        display: block;
+    }
+
+    .footer__container{
+        align-items: center;
+    }
+
+    .footer__container__marca{
+        width: 100%;
+        text-align: center;
+    }
+}
