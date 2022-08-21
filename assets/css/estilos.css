@@ -149,6 +149,13 @@
     line-height: 1.5rem;
 }
 
+.header__container__button__start:hover{
+    background-color: #fff;
+    border: 1px solid #000;    
+    color: #000;
+    transition: all .15s;
+}
+
 .main__section--welcome__container__image__container__img--background{
     position: absolute;
 }
@@ -157,6 +164,7 @@
     position: relative;
     top: 100px;
     left: 70px;
+    animation: flotar 6s ease-in-out infinite;
 }
 
 .main__section--features{
@@ -312,6 +320,11 @@
     background: #fff;
     border-radius: 10px;
     padding: 2.5rem;
+}
+
+.main__section--testimonials__container__grid__card:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transition: box-shadow .3s ease-in-out;
 }
 
 .main__section--testimonials__container__grid__title{
@@ -585,4 +598,16 @@
         width: 100%;
         text-align: center;
     }
+}
+
+@keyframes flotar {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
