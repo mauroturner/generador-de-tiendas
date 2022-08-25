@@ -11,7 +11,116 @@
     font-family: 'Inter', sans-serif;
 }
 
-.header{
+.navbar{
+    height: 72px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.brand{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.login,
+.signin{
+    width: 130px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+}
+
+.login{
+    background-color: #f1e4ff;
+    border: 1px solid #f1e4ff;
+    color: #8C30F5;
+}
+
+.signin{
+    background-color: #8C30F5;
+    border: 1px solid #8C30F5;
+    color: #fff;
+}
+
+.welcome__titulo{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 6.125rem;
+    color: var(--color-fuente-oscuro);
+}
+
+.welcome__subtitulo{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2.8125rem;
+}
+
+.start{
+    width: 144px;
+    height: 48px;
+    background-color: #8C30F5;
+    border: 1px solid #8C30F5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.altura-seccion{
+    min-height: calc(100vh - 72px);
+}
+
+.image-container{
+    position: relative; 
+    top: 0px;bottom: 0px;left:0px;right:0px;
+    width:100%; 
+    height:100%;
+}
+
+.img-welcome-background{
+    position: absolute;
+    top:-12%;
+}
+.img-welcome-demo{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    max-width: 100%;
+    height: auto;
+    animation: flotar 6s ease-in-out infinite;
+}
+
+@keyframes flotar {
+	0% {
+		transform: translatey(0);
+	}
+	50% {
+		transform: translatey(5%);
+	}
+	100% {
+		transform: translatey(0);
+	}
+}
+/* .header{
     position: sticky;
     top: 0;
     height: 72px;
@@ -610,4 +719,4 @@
 	100% {
 		transform: translatey(0px);
 	}
-}
+} */
