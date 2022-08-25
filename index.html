@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -49,18 +49,86 @@
         </nav>        
     </header>
     <main class="main">
-        <div class="container">
             <section class="welcome">
-                <div class="row altura-seccion align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="welcome__titulo">Creá tu tienda online</h2>
-                        <h3 class="welcome__subtitulo">Comenzá a vender por internet con un par de clics</h3>
-                        <button class="btn btn-light start">Comenzar</button>
+                <div class="container">
+                    <div class="row altura-seccion align-items-center">
+                        <div class="col-md-6">
+                            <h2 class="welcome__titulo">Creá tu tienda online</h2>
+                            <h3 class="welcome__subtitulo">Comenzá a vender por internet con un par de clics</h3>
+                            <button class="btn btn-light start">Comenzar</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image-container">
+                                <img class="img-welcome-background img-fluid" src="./assets/img/circulo-violeta.png" alt="Círculo violeta">
+                                <img class="img-welcome-demo" src="./assets/img/demo.png" alt="Demo producto">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="image-container">
-                            <img class="img-welcome-background img-fluid" src="./assets/img/circulo-violeta.png" alt="Círculo violeta">
-                            <img class="img-welcome-demo" src="./assets/img/demo.png" alt="Demo producto">
+                </div>
+            </section>
+            <section class="features">
+                <div class="container">
+                    <h4 class="section-title text-white text-center">Características</h4>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="features__card__img" src="./assets/img/icono-carta-01.png" alt="icono">
+                                    <p class="features__card__title">Característica 1</p>
+                                    <p class="features__card__description">Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
+                                    <a class="features__card__link" href="#">Conocer más →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="features__card__img" src="./assets/img/icono-carta-02.png" alt="icono">
+                                    <p class="features__card__title">Característica 2</p>
+                                    <p class="features__card__description">Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
+                                    <a class="features__card__link" href="#">Conocer más →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="features__card__img" src="./assets/img/icono-carta-03.png" alt="icono">
+                                    <p class="features__card__title">Característica 3</p>
+                                    <p class="features__card__description">Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
+                                    <a class="features__card__link" href="#">Conocer más →</a>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="features__card__img" src="./assets/img/icono-carta-04.png" alt="icono">
+                                    <p class="features__card__title">Característica 4</p>
+                                    <p class="features__card__description">Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
+                                    <a class="features__card__link" href="#">Conocer más →</a>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="features__card__img" src="./assets/img/icono-carta-05.png" alt="icono">
+                                    <p class="features__card__title">Característica 5</p>
+                                    <p class="features__card__description">Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
+                                    <a class="features__card__link" href="#">Conocer más →</a>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="features__card__img" src="./assets/img/icono-carta-06.png" alt="icono">
+                                    <p class="features__card__title">Característica 6</p>
+                                    <p class="features__card__description">Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
+                                    <a class="features__card__link" href="#">Conocer más →</a>                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,21 +136,6 @@
         </div>
     </main>
     <!-- <main class="main">
-        <section class="main__section--welcome">
-            <div class="main__section--welcome__container">
-                <div class="main__section--welcome__container__text">
-                    <h2 class="main__section--welcome__container__text__title">Creá tu tienda online</h2>
-                    <h3 class="main__section--welcome__container__text__subtitle">Comenzá a vender por internet con un par de clics</h3>
-                    <button class="header__container__button__start">Comenzar</button>
-                </div>
-                <div class="main__section--welcome__container__image">
-                    <div class="main__section--welcome__container__image__container">
-                        <img class="main__section--welcome__container__image__container__img--background" src="./assets/img/circulo-violeta.png" alt="Círculo violeta">
-                        <img class="main__section--welcome__container__image__container__img--demo" src="./assets/img/demo.png" alt="Demo producto">
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="main__section--features">
             <div class="main__section--features__container">
                 <h4 class="main__section--features__container__title">Características</h4>

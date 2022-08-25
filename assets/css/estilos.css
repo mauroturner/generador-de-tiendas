@@ -100,15 +100,65 @@
     position: absolute;
     top:-12%;
 }
+
 .img-welcome-demo{
     position: relative;
     top: 20%;
-    left: 5%;
+    left: 0%;
     max-width: 100%;
     height: auto;
     animation: flotar 6s ease-in-out infinite;
 }
 
+.features{
+    color: #fff;
+    background-color: var(--color-seccion--oscuro);
+    padding: 5rem 0;
+}
+
+.section-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.features__card__img{
+    margin-bottom: 3.5rem;
+}
+.features__card__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 0.75rem;
+}
+
+.features__card__description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 2.5rem;
+}
+
+.features__card__link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #8C30F5;
+    text-decoration: none;
+}
+
+.card-body{
+    padding: 2.5rem 2rem;
+}
 @keyframes flotar {
 	0% {
 		transform: translatey(0);
