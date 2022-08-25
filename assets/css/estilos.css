@@ -112,7 +112,7 @@
 
 .features{
     color: #fff;
-    background-color: var(--color-seccion--oscuro);
+    background-color: var(--color-marca);
     padding: 5rem 0;
 }
 
@@ -213,6 +213,39 @@
     font-size: 1.125rem;
     line-height: 2rem;
     margin-bottom: 2.5rem;
+}
+
+.footer{
+    color: #fff;
+    background-color: var(--color-seccion--oscuro);
+    padding: 4rem 0;
+}
+
+.footer__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #D9DBE1;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.footer__marca__copyright{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #D9DBE1;    
 }
 
 @keyframes flotar {
