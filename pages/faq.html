@@ -7,32 +7,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/estilos.css">
-    <title>Mi tienda</title>
+    <title>my Store</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
-            <div class="header__container__menu">
-                <div class="header__container__menu__logo">
-                    <a href="../index.html"><img src="../assets/img/logo.png" alt="Logo"></a>
-                </div>
-                <navbar class="header__container__menu__navbar">
-                    <ul class="header__container__menu__navbar__ul">
-                        <li class="header__container__menu__navbar__ul__li"><a class="header__container__menu__navbar__ul__li__link" href="../index.html" class="nav-link">Inicio</a></li>
-                        <li class="header__container__menu__navbar__ul__li"><a class="header__container__menu__navbar__ul__li__link" href="./nosotros.html" class="nav-link">Sobre nosotros</a></li>
-                        <li class="header__container__menu__navbar__ul__li"><a class="header__container__menu__navbar__ul__li__link" href="./precios.html" class="nav-link">Precios</a></li>
-                        <li class="header__container__menu__navbar__ul__li"><a class="header__container__menu__navbar__ul__li__link" href="./faq.html" class="nav-link">Preguntas frecuentes</a></li>
-                        <li class="header__container__menu__navbar__ul__li"><a class="header__container__menu__navbar__ul__li__link" href="./contacto.html" class="nav-link">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <h1 class="brand d-inline-block">MY STORE</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./faq.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </navbar>
+                    <div class="d-flex">
+                        <button class="btn btn-light login">Iniciar sesión</button>
+                        <button class="btn btn-light signin ms-2">Registrarse</button>      
+                    </div>
+                </div>
             </div>
-            <div class="header__container__buttons">
-                <button class="header__container__buttons__login">Iniciar sesión</button>
-                <button class="header__container__buttons__signin">Registrarse</button>
-                <button class="header__container__buttons__menu-burger">≡</button>
-            </div>
-        </div>
+        </nav>        
     </header>
     <main class="main">
         <section class="main__section--faq">
@@ -57,35 +71,36 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__container__marca">
-                <p class="footer__container__marca__p">my Store</p>
-                <p class="footer__container__marca__copyright">Copyright © 2022 my Store</p>
-                <p class="footer__container__marca__copyright">Todos los derechos reservados</p>
-            </div>
-            <div class="footer__container__menu">
-                <div class="footer__container__menu__column">
-                    <p class="footer__container__menu__column__title">Compañía</p>
-                    <a class="footer__container__menu__column__title__link" href="../index.html" class="nav-link">Inicio</a>
-                    <a class="footer__container__menu__column__title__link" href="./nosotros.html" class="nav-link">Sobre nosotros</a>
-                    <a class="footer__container__menu__column__title__link" href="./precios.html" class="nav-link">Precios</a>
-                    <a class="footer__container__menu__column__title__link" href="./faq.html" class="nav-link">Preguntas frecuentes</a>
-                    <a class="footer__container__menu__column__title__link" href="./contacto.html" class="nav-link">Contacto</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="footer__marca brand">MY STORE</p>
+                    <p class="footer__marca__copyright">Copyright © 2022 <span class="brand">MY STORE</span></p>
+                    <p class="footer__marca__copyright">Todos los derechos reservados</p>
                 </div>
-                <div class="footer__container__menu__column">
-                    <p class="footer__container__menu__column__title">Soporte</p>
-                    <a class="footer__container__menu__column__title__link" href="#" class="nav-link">Centro de ayuda</a>
-                    <a class="footer__container__menu__column__title__link" href="#" class="nav-link">Términos de servicio</a>
-                    <a class="footer__container__menu__column__title__link" href="#" class="nav-link">Condiciones de uso</a>
-                    <a class="footer__container__menu__column__title__link" href="#" class="nav-link">Políticas de privacidad</a>
-                    <a class="footer__container__menu__column__title__link" href="#" class="nav-link">Status</a>
+                <div class="col-md-3">
+                    <p class="footer__title">Compañía</p>
+                    <a class="footer__link" href="../index.html" class="nav-link">Inicio</a>
+                    <a class="footer__link" href="./nosotros.html" class="nav-link">Sobre nosotros</a>
+                    <a class="footer__link" href="./precios.html" class="nav-link">Precios</a>
+                    <a class="footer__link" href="./faq.html" class="nav-link">Preguntas frecuentes</a>
+                    <a class="footer__link" href="./contacto.html" class="nav-link">Contacto</a>
                 </div>
-                <div class="footer__container__menu__column">
-                    <p class="footer__container__menu__column__title">Newsletter</p>
-                    <input class="footer__container__menu__column__title__input" type="email" class="form-control" placeholder="Escribí tu correo electrónico">
+                <div class="col-md-3">
+                    <p class="footer__title">Soporte</p>
+                    <a class="footer__link" href="#" class="nav-link">Centro de ayuda</a>
+                    <a class="footer__link" href="#" class="nav-link">Términos de servicio</a>
+                    <a class="footer__link" href="#" class="nav-link">Condiciones de uso</a>
+                    <a class="footer__link" href="#" class="nav-link">Políticas de privacidad</a>
+                    <a class="footer__link" href="#" class="nav-link">Status</a>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer__title">Newsletter</p>
+                    <input class="form-control" type="email" class="form-control" placeholder="Escribí tu correo electrónico">
                 </div>
             </div>
         </div>
     </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
