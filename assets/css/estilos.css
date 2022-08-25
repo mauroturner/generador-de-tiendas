@@ -251,7 +251,7 @@
     color: #D9DBE1;    
 }
 
-.pricing{
+.pricing, .faq{
     padding: 4rem 0;
     min-height: calc(100vh - 72px);
 }
@@ -297,6 +297,35 @@
     line-height: 1.625rem;
     text-align: center;
     color: var(--color-fuente-oscuro);
+}
+
+.faq__title,
+.contact__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 3rem;
+}
+
+.faq__grid__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 0.5rem;
+}
+
+.faq__grid__paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 992px){
