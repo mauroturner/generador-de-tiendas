@@ -192,6 +192,29 @@
     margin-bottom: 0;
 }
 
+.testimonials{
+    background-color: #F4F5F7;
+    padding: 5rem 0;
+}
+
+.testimonials__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials__subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+}
+
 @keyframes flotar {
 	0% {
 		transform: translatey(0);
