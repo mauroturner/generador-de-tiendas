@@ -49,14 +49,29 @@
         </nav>        
     </header>
     <main class="main">
-        <section class="main__section--contact">
-            <div class="main__section--contact__container">
-                <div class="main__section--contact__container__text">
-                    <h2 class="main__section--contact__container__text__title">Contacto</h2>
-                    <input class="main__section--contact__container__text__input" type="text" placeholder="Nombre">
-                    <input class="main__section--contact__container__text__input" type="text" placeholder="Correo electrónico">
-                    <textarea class="main__section--contact__container__text__input" placeholder="Escribí tu consulta <máx 150 carácteres>" cols="30" rows="10"></textarea>
-                    <button class="main__section--contact__container__text__button">Enviar</button>
+        <section class="contact">
+            <h2 class="contact__title text-center">Contacto</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button">Enviar</button>
+                              </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

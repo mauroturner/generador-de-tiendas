@@ -251,7 +251,9 @@
     color: #D9DBE1;    
 }
 
-.pricing, .faq{
+.pricing, 
+.faq,
+.contact{
     padding: 4rem 0;
     min-height: calc(100vh - 72px);
 }
