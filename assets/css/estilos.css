@@ -251,6 +251,54 @@
     color: #D9DBE1;    
 }
 
+.pricing{
+    padding: 4rem 0;
+    min-height: calc(100vh - 72px);
+}
+
+.pricing__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);   
+    margin-bottom: 0.5rem;
+}
+
+.pricing__subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);   
+    margin-bottom: 3rem;
+}
+
+.pricing__image{
+    margin-bottom: 1.5rem;
+}
+
+.pricing__grid__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);  
+    margin-bottom: 0.5rem;    
+}
+
+.pricing__grid__description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);
+}
+
 @media screen and (max-width: 992px){
     .welcome__text-container{
         text-align: center;
