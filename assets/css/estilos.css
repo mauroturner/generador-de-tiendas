@@ -248,6 +248,12 @@
     color: #D9DBE1;    
 }
 
+@media screen and (max-width: 992px){
+    .welcome__text-container{
+        text-align: center;
+    }
+}
+
 @keyframes flotar {
 	0% {
 		transform: translatey(0);
@@ -811,6 +817,7 @@
 }
 
 @media screen and (max-width: 992px){
+    welcome__text-container
     .main__section--welcome__container,
     .main__section--features__container__grid,
     .main__section--how-works__container__grid,
