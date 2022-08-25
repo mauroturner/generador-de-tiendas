@@ -12,7 +12,7 @@
 }
 
 .navbar{
-    height: 72px;
+    min-height: 72px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 
@@ -162,9 +162,36 @@
     padding: 12px 20px;
     margin-top: 3rem;
 }
+
 .card-body{
     padding: 2.5rem 2rem;
 }
+
+.how-works{
+    padding: 5rem 0;
+}
+
+.how-works__subtitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.how-works__step{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: var(--color-fuente-oscuro);
+    margin-bottom: 0;
+}
+
 @keyframes flotar {
 	0% {
 		transform: translatey(0);
