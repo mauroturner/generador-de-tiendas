@@ -11,6 +11,9 @@
     font-family: 'Inter', sans-serif;
 }
 
+.header{
+    margin-bottom: 72px;
+}
 .navbar{
     min-height: 72px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
