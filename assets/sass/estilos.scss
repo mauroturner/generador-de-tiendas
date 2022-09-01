@@ -1,8 +1,7 @@
-:root {
-    --color-marca: #2C114F;
-    --color-seccion--oscuro: #0B0D17;
-    --color-fuente-oscuro: #18191F;
-}
+$color-marca: #2C114F;
+$color-seccion--oscuro: #0B0D17;
+$color-fuente-oscuro: #18191F;
+$altura-navbar: 72px;
 
 * {
     margin: 0;
@@ -12,49 +11,56 @@
 }
 
 .header{
-    margin-bottom: 72px;
-}
-.navbar{
-    min-height: 72px;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-}
-
-.brand{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    letter-spacing: 1px;
-}
-
-.nav-link{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.login,
-.signin{
-    width: 130px;
-    height: 40px;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-size: 0.875rem;
-}
-
-.login{
-    background-color: #f1e4ff;
-    border: 1px solid #f1e4ff;
-    color: #8C30F5;
-}
-
-.signin{
-    background-color: #8C30F5;
-    border: 1px solid #8C30F5;
-    color: #fff;
+    margin-bottom: $altura-navbar;
+    .navbar{
+        min-height: $altura-navbar;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+        .navbar-brand{
+            .brand{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+                letter-spacing: 1px;
+            }
+        }
+        .container{
+            .collapse.navbar-collapse{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            line-height: 1.25rem;
+                        }
+                    }
+                }
+            }
+            .d-flex{
+                .login, 
+                .signin{
+                    width: 130px;
+                    height: 40px;
+                    padding: 10px 20px;
+                    border-radius: 6px;
+                    font-size: 0.875rem;                    
+                }
+                .login{
+                    background-color: #f1e4ff;
+                    border: 1px solid #f1e4ff;
+                    color: #8C30F5;
+                }
+                .signin{
+                    background-color: #8C30F5;
+                    border: 1px solid #8C30F5;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 
 .welcome__titulo{
@@ -62,7 +68,7 @@
     font-weight: 800;
     font-size: 4.5rem;
     line-height: 6.125rem;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
 }
 
 .welcome__subtitulo{
@@ -115,7 +121,7 @@
 
 .features{
     color: #fff;
-    background-color: var(--color-marca);
+    background-color: $color-marca;
     padding: 5rem 0;
 }
 
@@ -136,7 +142,7 @@
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 2rem;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
     margin-bottom: 0.75rem;
 }
 
@@ -146,7 +152,7 @@
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.625rem;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
     margin-bottom: 2.5rem;
 }
 
@@ -180,7 +186,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: center;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
     margin-top: 1rem;
     margin-bottom: 0.25rem;
 }
@@ -191,7 +197,7 @@
     font-size: 1rem;
     line-height: 1.625rem;
     text-align: center;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
     margin-bottom: 0;
 }
 
@@ -220,7 +226,7 @@
 
 .footer{
     color: #fff;
-    background-color: var(--color-seccion--oscuro);
+    background-color: $color-seccion--oscuro;
     padding: 4rem 0;
 }
 
@@ -264,7 +270,7 @@
     font-size: 3rem;
     line-height: 4rem;
     text-align: center;
-    color: var(--color-fuente-oscuro);   
+    color: $color-fuente-oscuro;   
     margin-bottom: 0.5rem;
 }
 
@@ -274,7 +280,7 @@
     font-size: 1.125rem;
     line-height: 2rem;
     text-align: center;
-    color: var(--color-fuente-oscuro);   
+    color: $color-fuente-oscuro;   
     margin-bottom: 3rem;
 }
 
@@ -288,7 +294,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: center;
-    color: var(--color-fuente-oscuro);  
+    color: $color-fuente-oscuro;  
     margin-bottom: 0.5rem;    
 }
 
@@ -298,7 +304,7 @@
     font-size: 1rem;
     line-height: 1.625rem;
     text-align: center;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
 }
 
 .faq__title,
@@ -308,7 +314,7 @@
     font-size: 3rem;
     line-height: 4rem;
     text-align: center;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
     margin-bottom: 3rem;
 }
 
@@ -317,7 +323,7 @@
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
     margin-bottom: 0.5rem;
 }
 
@@ -326,7 +332,7 @@
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2rem;
-    color: var(--color-fuente-oscuro);
+    color: $color-fuente-oscuro;
     margin-bottom: 2.5rem;
 }
 
