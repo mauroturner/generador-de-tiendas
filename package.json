@@ -1,0 +1,26 @@
+{
+  "name": "generador-de-tiendas-mauro-turner",
+  "version": "1.0.0",
+  "description": "Proyecto final para coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/sass/estilos.scss assets/css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauroturner/generador-de-tiendas-turner.git"
+  },
+  "author": "Mauro Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauroturner/generador-de-tiendas-turner/issues"
+  },
+  "homepage": "https://github.com/mauroturner/generador-de-tiendas-turner#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+  
+}
