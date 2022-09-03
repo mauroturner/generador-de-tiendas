@@ -204,6 +204,13 @@ $altura-navbar: 72px;
 .testimonials{
     background-color: #F4F5F7;
     padding: 5rem 0;
+    .card-body{
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover{
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+        }
+    }
 }
 
 .testimonials__title{
