@@ -94,6 +94,30 @@
   color: #fff;
   background-color: #2C114F;
   padding: 5rem 0; }
+  .features .features__card__img {
+    margin-bottom: 3.5rem; }
+  .features .features__card__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #18191F;
+    margin-bottom: 0.75rem; }
+  .features .features__card__description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #18191F;
+    margin-bottom: 2.5rem; }
+  .features .features__card__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #8C30F5;
+    text-decoration: none; }
 
 .section-title {
   font-style: normal;
@@ -102,34 +126,6 @@
   line-height: 4rem;
   margin-bottom: 3rem;
   text-align: center; }
-
-.features__card__img {
-  margin-bottom: 3.5rem; }
-
-.features__card__title {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #18191F;
-  margin-bottom: 0.75rem; }
-
-.features__card__description {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #18191F;
-  margin-bottom: 2.5rem; }
-
-.features__card__link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1rem;
-  color: #8C30F5;
-  text-decoration: none; }
 
 .btn-features {
   width: 155px;
@@ -142,25 +138,23 @@
 
 .how-works {
   padding: 5rem 0; }
-
-.how-works__subtitle {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-  color: #18191F;
-  margin-top: 1rem;
-  margin-bottom: 0.25rem; }
-
-.how-works__step {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  text-align: center;
-  color: #18191F;
-  margin-bottom: 0; }
+  .how-works .how-works__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #18191F;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem; }
+  .how-works .how-works__step {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: #18191F;
+    margin-bottom: 0; }
 
 .testimonials {
   background-color: #F4F5F7;
@@ -170,51 +164,46 @@
     transition: box-shadow 0.3s ease-in-out; }
     .testimonials .card-body:hover {
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); }
-
-.testimonials__title {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 3rem;
-  line-height: 4rem;
-  margin-bottom: 0.5rem; }
-
-.testimonials__subtitle {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 2rem;
-  margin-bottom: 2.5rem; }
+  .testimonials .testimonials__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 0.5rem; }
+  .testimonials .testimonials__subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem; }
 
 .footer {
   color: #fff;
   background-color: #0B0D17;
   padding: 4rem 0; }
-
-.footer__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
-  margin-bottom: 1.5rem; }
-
-.footer__link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: #D9DBE1;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.75rem; }
-
-.footer__marca__copyright {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: #D9DBE1; }
+  .footer .footer__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem; }
+  .footer .footer__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #D9DBE1;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem; }
+  .footer .footer__marca__copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #D9DBE1; }
 
 .pricing,
 .faq,
@@ -230,6 +219,9 @@
   text-align: center;
   color: #18191F;
   margin-bottom: 0.5rem; }
+
+.pop-outin {
+  animation: 2s anim-popoutin ease infinite; }
 
 .pricing__subtitle {
   font-style: normal;
@@ -297,3 +289,25 @@
     transform: translatey(5%); }
   100% {
     transform: translatey(0); } }
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+  25% {
+    color: green;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5); }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0); } }
