@@ -3,65 +3,8 @@ $color-seccion--oscuro: #0B0D17;
 $color-fuente-oscuro: #18191F;
 $altura-navbar: 72px;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
-.header{
-    margin-bottom: $altura-navbar;
-    .navbar{
-        min-height: $altura-navbar;
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-        .navbar-brand{
-            .brand{
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 0.875rem;
-                line-height: 1.125rem;
-                letter-spacing: 1px;
-            }
-        }
-        .container{
-            .collapse.navbar-collapse{
-                .navbar-nav{
-                    .nav-item{
-                        .nav-link{
-                            font-family: 'Inter';
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 0.875rem;
-                            line-height: 1.25rem;
-                        }
-                    }
-                }
-            }
-            .d-flex{
-                .login, 
-                .signin{
-                    width: 130px;
-                    height: 40px;
-                    padding: 10px 20px;
-                    border-radius: 6px;
-                    font-size: 0.875rem;                    
-                }
-                .login{
-                    background-color: #f1e4ff;
-                    border: 1px solid #f1e4ff;
-                    color: #8C30F5;
-                }
-                .signin{
-                    background-color: #8C30F5;
-                    border: 1px solid #8C30F5;
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
+@use './base/reset';
+@use './layout/header';
 
 .welcome__titulo{
     font-style: normal;
