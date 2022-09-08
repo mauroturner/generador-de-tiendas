@@ -6,7 +6,7 @@
 .main-font, *, .header, .footer {
   font-family: "Inter", "sans-serif"; }
 
-.section-height, .welcome .container .row, .faq, .pricing, .contact {
+.section-height, .welcome .container .row, .team, .faq, .pricing, .contact {
   padding: 4rem 0;
   min-height: calc(100vh - 72px); }
 
@@ -200,6 +200,10 @@
   .testimonials .testimonials__subtitle {
     line-height: 2rem;
     margin-bottom: 2.5rem; }
+
+.team {
+  display: flex;
+  align-items: center; }
 
 .faq .faq__title {
   color: #18191F;
