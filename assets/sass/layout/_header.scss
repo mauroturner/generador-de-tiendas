@@ -1,12 +1,11 @@
 .header{
-    margin-bottom: $altura-navbar;
+    @extend .main-font;
+    margin-bottom: $navbar-height;
     .navbar{
-        min-height: $altura-navbar;
+        min-height: $navbar-height;
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
         .navbar-brand{
             .brand{
-                font-family: 'Inter';
-                font-style: normal;
                 font-weight: 700;
                 font-size: 0.875rem;
                 line-height: 1.125rem;
@@ -18,8 +17,6 @@
                 .navbar-nav{
                     .nav-item{
                         .nav-link{
-                            font-family: 'Inter';
-                            font-style: normal;
                             font-weight: 500;
                             font-size: 0.875rem;
                             line-height: 1.25rem;

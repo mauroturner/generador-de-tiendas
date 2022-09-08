@@ -1,0 +1,18 @@
+.how-works{
+    padding: 5rem 0;
+
+    .how-works__subtitle{
+        @extend .subtitle;
+        color: $color-fuente-oscuro;
+        margin-top: 1rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .how-works__step{
+        @extend .section-paragraph;
+        line-height: 1.625rem;
+        text-align: center;
+        color: $color-fuente-oscuro;
+        margin-bottom: 0;
+    }
+}

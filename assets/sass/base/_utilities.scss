@@ -1,0 +1,40 @@
+.main-font{
+    font-family: map-get($fonts, 'main'), map-get($fonts, 'secondary');
+}
+
+.section-height{
+    padding: 4rem 0;
+    min-height: calc(100vh - #{$navbar-height});
+}
+
+.section-title{
+    font-style: map-get($font-styles, 'normal');
+    font-weight: map-get($font-weights, 'bold');
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section-subtitle{
+    font-style: map-get($font-styles, 'normal');
+    font-weight: map-get($font-weights, 'normal');
+    font-size: 1.125rem;
+}
+
+.section-paragraph{
+    font-style: map-get($font-styles, 'normal');
+    font-weight: map-get($font-weights, 'normal');
+    font-size: 1.125rem;
+}
+
+.subtitle{
+    font-style: map-get($font-styles, 'normal');
+    font-weight: map-get($font-weights, 'semi-bold');
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.card-body{
+    padding: 2.5rem 2rem;
+}

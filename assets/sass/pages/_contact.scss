@@ -1,0 +1,9 @@
+.contact{
+    @extend .section-height;
+
+    .contact__title{
+        @extend .section-title;
+        color: $color-fuente-oscuro;
+        margin-bottom: 3rem;
+    }
+}

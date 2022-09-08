@@ -1,0 +1,5 @@
+@mixin section($background-color, $color, $padding){
+    color: $color;
+    background-color: $background-color;
+    padding: $padding;
+}

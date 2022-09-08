@@ -1,0 +1,22 @@
+.faq{
+    @extend .section-height;
+
+    .faq__title{
+        @extend .section-title;
+        color: $color-fuente-oscuro;
+        margin-bottom: 3rem;
+    }
+    
+    .faq__grid__title{
+        @extend .subtitle;
+        color: $color-fuente-oscuro;
+        margin-bottom: 0.5rem;
+    }
+    
+    .faq__grid__paragraph{
+        @extend .section-subtitle;
+        line-height: 3rem;
+        color: $color-fuente-oscuro;
+        margin-bottom: 2.5rem;
+    }
+}
